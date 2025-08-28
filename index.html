@@ -17,10 +17,24 @@
       background: #222;
       color: #fff;
       padding: 1rem;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     h1 {
       margin: 0;
+    }
+    .billing-btn {
+      background: #0073e6;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .billing-btn:hover {
+      background: #005bb5;
     }
     main {
       max-width: 900px;
@@ -55,6 +69,7 @@
 <body>
   <header>
     <h1>Meyer Oppelt Websites</h1>
+    <a class="billing-btn" href="https://billing.stripe.com/p/login/4gM8wR9gMeskaS6fQwcAo00" target="_blank">Billing</a>
   </header>
 
   <main>
